@@ -29,3 +29,6 @@ class IPL : Player {        // inheritence
 
 let ply2 = IPL(name:"rohit sharma", style:"right handed batsman")
 ply2.batting_style()
+ply2.team = "mumbai indians"
+print(ply2.team)     // this would print Optional("mumbai indians")
+print(ply2.team!)    // we need ! mark to unpack optional variables
