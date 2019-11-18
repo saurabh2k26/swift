@@ -1,7 +1,7 @@
 class Player{
     var name : String
     var style : String
-    var team = ""
+    var team : String?    // ? denotes that this is optional ie can be empty
     
     init(name: String, style:String){
         print("new player object created")
