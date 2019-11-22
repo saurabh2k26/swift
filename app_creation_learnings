@@ -3,7 +3,7 @@
 - using horizontal and vertical stacks
 - customize objects for different screen sizes using 'vary for traits'
 - opening view controller using double circle icon
-- mapping properties and actions to viewcontroller
+- mapping properties and actions to viewcontroller > by highlightinmg element, then ctrl and drag arrow to viewController
 - unmapping properties to view controller
 - creating new page is creating new view controller > file > new > file > cocoa touch class > sub class of UI view controller. Now objects > view controller
 and then map both ie highlight new view contoller object > inspect > custom class > select corresponding class
