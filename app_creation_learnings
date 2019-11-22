@@ -1,0 +1,7 @@
+- Adding objects
+- adding constraint to objects with reference to view or other objects
+- using horizontal and vertical stacks
+- customize objects for different screen sizes using 'vary for traits'
+- opening view controller using double circle icon
+- mapping properties and actions to viewcontroller
+- unmapping properties to view controller
