@@ -5,3 +5,6 @@
 - opening view controller using double circle icon
 - mapping properties and actions to viewcontroller
 - unmapping properties to view controller
+- creating new page is creating new view controller > file > new > file > cocoa touch class > sub class of UI view controller. Now objects > view controller
+and then map both ie highlight new view contoller object > inspect > custom class > select corresponding class
+- connect pages by directly pointing button > ctrl > drag to new view
