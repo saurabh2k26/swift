@@ -8,6 +8,8 @@
 - creating new page is creating new view controller > file > new > file > cocoa touch class > sub class of UI view controller. Now objects > view controller
 and then map both ie highlight new view contoller object > inspect > custom class > select corresponding class
 - connect pages by directly pointing button > ctrl > drag to new view
+- switch from one screen to another via code > create segue > call below code
+  performSegue(withIdentifier: "segueEnd", sender: self)
 - pass data between different view controller:
   - create a segue by clicking view controller icon on view 1 and ctrl drag to second view
   - name the segue
