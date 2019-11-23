@@ -8,3 +8,16 @@
 - creating new page is creating new view controller > file > new > file > cocoa touch class > sub class of UI view controller. Now objects > view controller
 and then map both ie highlight new view contoller object > inspect > custom class > select corresponding class
 - connect pages by directly pointing button > ctrl > drag to new view
+- pass data between different view controller:
+  - create a segue by clicking view controller icon on view 1 and ctrl drag to second view
+  - name the segue
+  - create a empty variable in second view
+  - in func override func viewDidLoad(), assign value like mode.text = my_variable
+  - in first controller, on even which changes page like button click:
+    performSegue(withIdentifier: "segue_1", sender: self)
+   - write additional function:
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let viewControllerGridPage = segue.destination as! ViewControllerGridPage
+        viewControllerGridPage.modeFromMainPage = "basic"
+    }
+    
