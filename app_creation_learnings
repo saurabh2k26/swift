@@ -49,4 +49,7 @@ and then map both ie highlight new view contoller object > inspect > custom clas
           // couldn't load file :(
        } 
    }
+   
+ - Save UISwitch state in UserDefaults
+  https://stackoverflow.com/questions/50355017/save-uiswitch-state-in-userdefaults
     
