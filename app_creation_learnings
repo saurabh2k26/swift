@@ -32,4 +32,21 @@ and then map both ie highlight new view contoller object > inspect > custom clas
   Then call this where you want the delayed function to execute:
   let delayInSeconds = 1
   perform(#selector(delayedFunc), with: nil, afterDelay: delayInSeconds)
+  
+- Adding sound
+  1> move your audio files to same folder to viewcontroller files
+  2> mytestApp ie 1st folder > go to tab - build Phases > last option is Copy bundle resources > add your mp3 file here also
+  3>code: 
+  import AVFoundation
+  let soundEffect = URL(fileURLWithPath: Bundle.main.path(forResource: "btn_click_sound", ofType: "mp3")!)
+   var audioPlayer = AVAudioPlayer()
+
+   @IBAction func buttonClick(sender: AnyObject) {
+       do {
+            audioPlayer = try AVAudioPlayer(contentsOf: soundEffect)
+            audioPlayer.play()
+       } catch {
+          // couldn't load file :(
+       } 
+   }
     
