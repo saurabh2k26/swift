@@ -1,0 +1,14 @@
+var a = 5
+
+(lldb) 
+expression a
+e a
+print a
+po a
+e a = 10 (assignment)
+
+result like:
+(Int) $R7 = 10
+$R7 can be used in future
+***********************************************************************
+more: https://medium.com/flawless-app-stories/debugging-swift-code-with-lldb-b30c5cf2fd49
