@@ -11,3 +11,5 @@ let allButtons = app.buttons
         for i in 0...allButtons.count-1 {
             print(allButtons.element(boundBy: i).label)
         }
+// specific button
+XCUIApplication().buttons["grid1"].tap // where grid1 is identifier. get it from po XCUIApplication().buttons
