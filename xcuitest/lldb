@@ -1,0 +1,8 @@
+// print all UI elements
+po XCUIApplication().debugDescription
+
+// print all buttons
+po XCUIApplication().buttons
+
+// print all static texts
+po XCUIApplication().staticTexts
