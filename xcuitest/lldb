@@ -4,5 +4,23 @@ po XCUIApplication().debugDescription
 // print all buttons
 po XCUIApplication().buttons
 
+//tap button by identifier
+po XCUIApplication().buttons["enter_button"].tap()
+
+//tap button by index ie order in which it appears
+po XCUIApplication().buttons.element(boundBy: 0).tap()
+
 // print all static texts
 po XCUIApplication().staticTexts
+
+// print all images
+po XCUIApplication().images
+
+// different launch options
+po XCUIApplication().launch()
+po XCUIApplication().launchArguments  //if you need to pass some arguments mentioned by developers
+po XCUIApplication().launchEnvironment   // if you want to pass environment
+po XCUIApplication(bundleIdentifier: "com.apple.news").launch()  // launch app by bundle
+
+//swipe actions
+po XCUIApplication().swipeUp()
